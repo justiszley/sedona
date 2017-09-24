@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>hotels</title>
+</head>
+
+<body>
+	<div class="global-width">
+		<header class="main-header">
+			<a href="index.html">
+				<img class="main-logo" src="img/content/main-logo.png" alt="Логотип Седоны" width="138" height="70">
+			</a>
+
+			<nav>
+				<ul class="main-navigation">
+					<li>
+						<a href="#">Информация</a>
+					</li>
+
+					<li>
+						<a href="#">Фото и видео</a>
+					</li>
+
+					<li>
+						<a href="#">Карта штата</a>
+					</li>
+
+					<li>
+						<a href="#">Гостиницы</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h1 class="visually-hidden">Резиденция в седоне</h1>
+
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтр отбора резиденции</h2>
+
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<fieldset class="stuff-set">
+						<legend>Инфраструктура</legend>
+
+						<ul>
+							<li>
+								<input id="pool-checkbox" type="checkbox" name="stuff-set" value="pool" checked>
+								<label for="pool-checkbox">Бассейн</label>
+							</li>
+
+							<li>
+								<input id="parking-checkbox" type="checkbox" name="stuff-set" value="parking">
+								<label for="parking-checkbox">Парковка</label>
+							</li>
+
+							<li>
+								<input id="wifi-checkbox" type="checkbox" name="stuff-set" value="wifi">
+								<label for="wifi-checkbox">Wi-fi</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<fieldset class="residence-type">
+						<legend>Тип жилья</legend>
+
+						<ul>
+							<li>
+								<input id="hotel-field" type="checkbox" name="residence-type" value="hotel" checked>
+								<label for="hotel-field">Гостиница</label>
+							</li>
+
+							<li>
+								<input id="motel-field" type="checkbox" name="residence-type" value="motel" checked>
+								<label for="motel-field">Мотель</label>
+							</li>
+
+							<li>
+								<input id="apartment-field" type="checkbox" name="residence-type" value="apartment" checked>
+								<label for="apartment-field">Апартаменты</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<fieldset class="cost">
+						<legend>Стоимоить в сутки (р):</legend>
+
+						<p><span>от 0</span><span>до 3000</span></p>
+
+						<div>Ранг</div>
+					</fieldset>
+
+					<a class="filter-btn" href="hotels-filtered.html" type="submit">Показать</a>
+				</form>
+			</section>
+
+			<section class="sorting">
+				<h2 class="visually-hidden">Сортировка отобранных резиденций</h2>
+
+				<span>Найдено: 3</span>
+
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<fieldset>
+						<legend>Сортировка:</legend>
+
+						<ul class="word-sorter-list">
+							<li>По цене</li>
+							<li>По типу</li>
+							<li>По рейтингу</li>
+						</ul>
+
+						<ul class="triangle-sorter-list">
+							<li><span class="visually-hidden">По возрастанию</span></li>
+							<li><span class="visually-hidden">По убыванию</span></li>
+						</ul>
+					</fieldset>
+				</form>
+			</section>
+
+			<section class="residence">
+				<h2 class="visually-hidden">Доступные резиденции</h2>
+
+				<ul class="residence-list">
+					<li>
+						<article>
+							<img src="img/content/residence1.jpg " alt="Фотография гостиницы" width="135" height="90">
+
+							<div class="residence-information">
+								<h3 class="residence-name">Amara Resort &#38; Spa</h3>
+
+								<span class="residence-type">Гостиница</span>
+								<span class="residence-price">От 4000 р.</span>
+
+								<a class="residence-information-btn" href="residence.html">Подробнее</a>
+								<a class="residence-information-btn" href="booking.html">Забронировать</a>
+							</div>
+
+							<div class="residence-rating">
+								<ul class="stars-rating">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+
+								<p class="numerical-rating">Рейтинг: 8,5</p>
+							</div>
+						</article>
+					</li>
+
+					<li>
+						<article>
+							<img src="img/content/residence2.jpg " alt="Фотография гостиницы" width="135" height="90">
+
+							<div class="residence-information">
+								<h3 class="residence-name">Desert Quail Inn</h3>
+
+								<span class="residence-type">Мотель</span>
+								<span class="residence-price">От 3000 р.</span>
+
+								<a class="residence-information-btn" href="residence.html">Подробнее</a>
+								<a class="residence-information-btn" href="booking.html">Забронировать</a>
+							</div>
+
+							<div class="residence-rating">
+								<ul class="stars-rating">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+
+								<p class="numerical-rating">Рейтинг: 8,9</p>
+							</div>
+						</article>
+					</li>
+
+					<li>
+						<article>
+							<img src="img/content/residence3.jpg " alt="Фотография гостиницы" width="135" height="90">
+
+							<div class="residence-information">
+								<h3 class="residence-name">Villas at Poco Diablo</h3>
+
+								<span class="residence-type">Апартаменты</span>
+								<span class="residence-price">От 2000 р.</span>
+
+								<a class="residence-information-btn" href="residence.html">Подробнее</a>
+								<a class="residence-information-btn" href="booking.html">Забронировать</a>
+							</div>
+
+							<div class="residence-rating">
+								<ul class="stars-rating">
+									<li></li>
+									<li></li> 
+								</ul>
+
+								<p class="numerical-rating">Рейтинг: 9,2</p>
+							</div>
+						</article>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="main-footer">
+			<p>#visitsedona</p>
+
+			<ul class="social-list">
+				<li>
+					<a href="#">Twitter</a>
+				</li>
+
+				<li>
+					<a href="#">Facebook</a>
+				</li>
+
+				<li>
+					<a href="#">YouTube</a>
+				</li>
+			</ul>
+
+			<p>website by</p>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/content/html-logo.png" alt="Логотип HTML Academy" width="115" height="41"></a>
+		</footer>
+	</div>		
+</body>
+
+</html>
