@@ -1,0 +1,164 @@
+@font-face {
+	font-family: "PT Sans";
+	font-weight: normal;
+	font-style: normal;
+	src: local("PT Sans"),
+	url(../fonts/ptsans.woff) format("woff"),
+	url(../fonts/ptsans.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-weight: bold;
+	font-style: normal;
+	src: local("PT Sans"),
+	url(../fonts/ptsansbold.woff) format("woff"),
+	url(../fonts/ptsansbold.woff2) format("woff2");
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+    text-transform: uppercase;
+	color: #333333;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0; 
+}
+
+.global-width {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 100px -40px #000;
+}
+
+.main-header {
+	padding: 0 6%;
+}
+
+.main-logo {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	margin-left: -69px;
+}
+
+.main-navigation {
+	display: flex;
+    align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 26px;
+	font-weight: bold;
+	min-height: 56px;
+}
+
+.main-navigation li:first-of-type {
+	margin-right: 147px;
+}
+
+.main-navigation li:last-of-type {
+	margin-left: 165px;
+}
+
+.main-navigation li:nth-of-type(3) {
+	margin-left: auto;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+	color: #81b3d2;
+}
+
+.main-navigation a:active {
+	color: rgba(0, 0, 0 ,0.3);
+}
+
+.hotels-page .hotels-link {
+	color: #766357;
+}
+
+.hotels-page .hotels-link:hover {
+	color: #766357;
+}
+
+.intro {
+	position: relative;
+	padding-top: 76px;
+	padding-bottom: 80px;
+	margin-bottom: 60px;
+	background-color: #0dafdd;
+	background-image: url(../img/i/intro-bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.intro::after {
+	content: url(../img/i/intro-bottom.png);
+	position: absolute;
+	bottom: -6px;
+}
+
+.intro-img {
+	display: block;
+	margin: 0 auto;
+}
+
+.reasons-intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 26px;
+}
+
+.reasons-intro p {
+	margin: 0;
+	width: 500px;
+	text-align: center;
+}
+
+.reasons-intro p:first-of-type {
+	margin-bottom: 23px;
+}
+
+.reasons-intro b {
+	font-size: 21px;
+	font-weight: bold;
+}
