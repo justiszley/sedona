@@ -53,31 +53,33 @@
 				</div>					
 
 				<ul class="reasons-list">
-					<li>					
-						<h3 class="reasons-title">Настоящий городок</h3>
+					<li class="pictured-item">
+						<div>
+							<h3 class="reasons-title">Настоящий городок</h3>
 
-						<span class="reasons-number">№1</span>
+							<span class="reasons-number">№1</span>
 
-						<p class="reasons-description">Седона - не аттракцион для туристов, там течёт своя жизнь.</p>
+							<p class="reasons-description">Седона - не аттракцион для туристов, там течёт своя жизнь.</p>
+						</div>
 
 						<img src="img/content/landscape1.jpg" alt="Прекрасные домики и цветы в Седоне" width="800" height="256">
 					</li>
 
 					<li>
-						<ul>
-							<li>
+						<ul class="one-third-list one-third-list-iconed">
+							<li class="apartments-item">
 								<h3 class="reasons-title">Жильё</h3>
 
 								<p class="reasons-description">Рекомендуем пожить в настоящем мотеле, как в кино</p>
 							</li>
 
-							<li>
+							<li class="food-item">
 								<h3 class="reasons-title">Еда</h3>
 
 								<p class="reasons-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
 							</li>
 
-							<li>
+							<li class="gift-item">
 								<h3 class="reasons-title">Сувениры</h3>
 
 								<p class="reasons-description">Не только китайского, но и местного производства</p>
@@ -85,18 +87,20 @@
 						</ul>
 					</li>
 
-					<li>
+					<li class="pictured-item">
 						<img src="img/content/landscape2.jpg" alt="Инкредебли страшный Мост Дьявола в Седоне" width="800" height="256">
 
-						<h3 class="reasons-title">Там есть мост дьявола</h3>
+						<div>
+							<h3 class="reasons-title">Там есть мост дьявола</h3>
 
-						<span class="reasons-number">№2</span>
+							<span class="reasons-number">№2</span>
 
-						<p class="reasons-description">Да, по нему можно пройти. Если конечно вы осмелитесь</p>
+							<p class="reasons-description">Да, по нему можно пройти. Если конечно вы осмелитесь</p>
+						</div>
 					</li>
 
 					<li>
-						<ul>
+						<ul class="one-third-list">
 							<li>
 								<h3 class="reasons-title">Небольшая площадь</h3>
 
@@ -133,27 +137,47 @@
 				<p>Укажите предполагаемые даты поездки, 
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
-				<button>Поиск гостиницы в седоне</button>
+				<button class="accomodation-searching-btn">Поиск гостиницы в седоне</button>
 
 				<section class="modal modal-hotel">
-					<h2>Форма поиска гостиницы</h2>
+					<h2 class="visually-hidden">Форма поиска гостиницы</h2>
 
 					<form action="https://echo.htmlacademy.ru" method="post">
-						<label for="date-in">Дата заезда</label>
-						<input id="date-in" type="text" name="date-in" placeholder="24 апреля 2017">
+						<div class="form-row full-row">
+							<label for="date-in">Дата заезда</label>
+							<input id="date-in" type="text" name="date-in" placeholder="24 апреля 2017">
+						</div>
+							
+						<div class="form-row full-row">
+							<label for="date-out">Дата выезда</label>
+							<input id="date-out" type="text" name="date-out" placeholder="4 июля 2017">
+						</div>
+							
+						<div class="form-row two-halfs">
+							<div>
+								<label for="adult-count">Взрослые</label>
 
-						<label for="date-out">Дата выезда</label>
-						<input id="date-out" type="text" name="date-out" placeholder="4 июля 2017">
+								<div class="amount-counter">
+									<button class="amount-control amount-minus" type="button"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
 
-						<label for="adult-count">Взрослые</label>
-						<button>Уменьшить количество взрослых</button>
-						<input id="adult-count" type="text" name="adult-count" placeholder="2">
-						<button>Увеличить количество взрослых</button>
+									<input id="adult-count" type="text" name="adult-count" placeholder="2">
 
-						<label for="children-count">Дети</label>
-						<button>Уменьшить количество детей</button>
-						<input id="children-count" type="text" name="children-count" placeholder="0">
-						<button>Увеличить количество детей</button>
+									<button class="amount-control amount-plus" type="button"><span class="visually-hidden">Увеличить количество взрослых</span></button>
+								</div>
+							</div>
+
+							<div>
+								<label for="children-count">Дети</label>
+
+								<div class="amount-counter">
+									<button class="amount-control amount-minus" type="button"><span class="visually-hidden">Уменьшить количество детей</span></button>
+
+									<input id="children-count" type="text" name="children-count" placeholder="0">
+
+									<button class="amount-control amount-plus" type="button"><span class="visually-hidden">Увеличить количество детей</span></button>
+								</div>
+							</div>
+						</div>
 
 						<button>Найти</button>
 					</form>
@@ -161,7 +185,7 @@
 			</section>
 
 			<section class="map">
-				<h2>Расположение Седоны на карте</h2>
+				<h2 class="visually-hidden">Расположение Седоны на карте</h2>
 
 				<img src="img/content/map.jpg" alt="Расположение Седоны на карте" width="1200" height="593">
 			</section>
