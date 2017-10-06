@@ -169,6 +169,7 @@ body {
 	flex-direction: column;
 	text-align: center;
 	margin: 0;
+	margin-bottom: 50px;
 	padding: 0;
 	list-style-type: none;
 }
@@ -275,14 +276,17 @@ body {
 }
 
 .offer b {
+	display: inline-block;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: bold;
+	margin-bottom: 23px;
 }
 
 .offer p {
 	margin: 0;
 	line-height: 24px;
+	margin-bottom: 47px;
 }
 
 .accomodation-searching-btn {
@@ -314,7 +318,7 @@ body {
 	width: 568px;
 	margin: 0 auto;
 	padding: 55px;
-	padding-top: 61px;
+	padding-top: 53px;
 	background-color: #f7f7f7;
 }
 
@@ -328,16 +332,31 @@ body {
 	align-items: center;
 }
 
-.modal-hotel .form-row:first-of-type {
-	margin-bottom: 37px;
+.modal-hotel .form-row:nth-of-type(1) {
+	margin-bottom: 24px;
+}
+
+.modal-hotel .form-row:nth-of-type(2) {
+	margin-bottom: 28px;
+}
+
+.modal-hotel .form-row:nth-of-type(3) {
+	margin-bottom: 53px;
 }
 
 .modal-hotel .two-halfs {
 	display: flex;
+	justify-content: space-between;
 }
 
-.two-halfs div {
+.modal-hotel input {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.amount-counter {
 	display: flex;
+	align-items: center;
 }
 
 .full-row label {
@@ -347,12 +366,30 @@ body {
 
 .full-row input {
 	flex-grow: 1;
-	padding-top: 4px;
-	padding-bottom: 4px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	padding-left: 12px;
 	padding-right: 37px;
 	border: 2px solid #f2f2f2;
 	background-color: #f2f2f2;
+}
+
+.full-row {
+	position: relative;
+}
+
+.full-row svg {
+	position: absolute;
+	top: 10px;
+	right: 8px;
+}
+
+.full-row svg:hover path {
+	fill: #000;
+}
+
+.full-row svg:active path {
+	fill: #81b3d2;
 }
 
 .full-row input:hover {
@@ -380,15 +417,147 @@ body {
 }
 
 .amount-counter input {
-	width: 114px;
+	width: 38px;
 	background-color: #f2f2f2;
 	border: 0;
 	text-align: center;
-	padding-left: 38px;
-	padding-right: 38px;
+	height: 38px;
+}
+
+.amount-counter:first-of-type label {
+	margin-right: 43px;
+}
+
+.amount-counter:last-of-type label {
+	margin-right: 31px;
 }
 
 .amount-control {
 	background: 0;
 	border: 0;
+	width: 38px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
+
+.amount-minus::before {
+	content: "-";
+	font-size: 41px;
+	line-height: 17px;
+	color: #a9a9a9;
+}
+
+.amount-plus::before {
+	content: "+";
+	font-size: 23px;
+	line-height: 35px;
+	font-weight: bold;
+	color: #a9a9a9;
+}
+
+.amount-control:hover::before,
+.amount-control:focus::before {
+	color: #000;
+}
+
+.amount-control:active::before {
+	color: #81b3d2;
+}
+
+.amount-control:focus {
+	outline: none;
+}
+
+.modal-hotel-btn {
+	font: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	color: #fff;
+	text-transform: uppercase;
+	min-height: 58px;
+	border: none;
+	background-color: #81b3d2;
+}
+
+.modal-hotel-btn:hover,
+.modal-hotel-btn:focus {
+	background-color: #669ec0;
+}
+
+.modal-hotel-btn:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.map {
+	position: relative;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 132px;
+	padding-right: 100px;
+	padding-top: 31px;
+	padding-bottom: 31px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.map .main-footer {
+	position: absolute;
+	width: 1200px;
+	bottom: 0;
+	z-index: 1;	
+}
+
+.footer-tag {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.social-list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	margin-left: 28px;
+	padding: 0;
+}
+
+.social-list a {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.twitter-icon {
+	background-image: url(../img/i/twitter.svg);
+}
+
+.facebook-icon {
+	background-image: url(../img/i/facebook.svg);
+}
+
+.youtube-icon {
+	background-image: url(../img/i/youtube.svg);
+}
+
+.social-list li:nth-of-type(n+2) {
+	margin-left: 6px;
+}
+
+.copyright {
+	display: flex;
+	align-items: center;
+}
+
+.copyright p {
+	margin: 0;
+	margin-top: -8px;
+	margin-right: 8px;
 }
