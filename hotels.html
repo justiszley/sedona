@@ -46,17 +46,17 @@
 
 						<ul>
 							<li>
-								<input id="pool-checkbox" type="checkbox" name="stuff-set" value="pool" checked>
+								<input class="visually-hidden" id="pool-checkbox" type="checkbox" name="stuff-set" value="pool" checked>
 								<label for="pool-checkbox">Бассейн</label>
 							</li>
 
 							<li>
-								<input id="parking-checkbox" type="checkbox" name="stuff-set" value="parking">
+								<input class="visually-hidden" id="parking-checkbox" type="checkbox" name="stuff-set" value="parking" disabled>
 								<label for="parking-checkbox">Парковка</label>
 							</li>
 
 							<li>
-								<input id="wifi-checkbox" type="checkbox" name="stuff-set" value="wifi">
+								<input class="visually-hidden" id="wifi-checkbox" type="checkbox" name="stuff-set" value="wifi">
 								<label for="wifi-checkbox">Wi-fi</label>
 							</li>
 						</ul>
@@ -67,54 +67,70 @@
 
 						<ul>
 							<li>
-								<input id="hotel-field" type="checkbox" name="residence-type" value="hotel" checked>
+								<input class="visually-hidden" id="hotel-field" type="checkbox" name="residence-type" value="hotel" checked disabled>
 								<label for="hotel-field">Гостиница</label>
 							</li>
 
 							<li>
-								<input id="motel-field" type="checkbox" name="residence-type" value="motel" checked>
+								<input class="visually-hidden" id="motel-field" type="checkbox" name="residence-type" value="motel" checked>
 								<label for="motel-field">Мотель</label>
 							</li>
 
 							<li>
-								<input id="apartment-field" type="checkbox" name="residence-type" value="apartment" checked>
+								<input class="visually-hidden" id="apartment-field" type="checkbox" name="residence-type" value="apartment" checked>
 								<label for="apartment-field">Апартаменты</label>
 							</li>
 						</ul>
 					</fieldset>
 
-					<fieldset class="cost">
-						<legend>Стоимоить в сутки (р):</legend>
+					<div>
+						<fieldset class="cost">
+							<legend>Стоимоить в сутки (р):</legend>
 
-						<p><span>от 0</span><span>до 3000</span></p>
+							<p><span>от 0</span><span>до 3000</span></p>
 
-						<div>Ранг</div>
-					</fieldset>
+							<div class="range"><span></span></div>
+						</fieldset>
 
-					<a class="filter-btn" href="hotels-filtered.html" type="submit">Показать</a>
+						<a class="filter-btn" href="hotels-filtered.html" type="submit">Показать</a>
+					</div>						
 				</form>
 			</section>
 
 			<section class="sorting">
 				<h2 class="visually-hidden">Сортировка отобранных резиденций</h2>
 
-				<span>Найдено: 3</span>
+				<span class="found-count">Найдено: 3</span>
 
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<fieldset>
-						<legend>Сортировка:</legend>
+				<form class="sorting-form" action="https://echo.htmlacademy.ru" method="post">
+					<h3>Сортировка:</h3>
 
-						<ul class="word-sorter-list">
-							<li>По цене</li>
-							<li>По типу</li>
-							<li>По рейтингу</li>
-						</ul>
+					<ul class="word-sorter-list">
+						<li>
+							<input class="visually-hidden" id="price-radio" type="radio" name="word-sorter" value="price" checked>
+							<label for="price-radio">По цене</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="type-radio" type="radio" name="word-sorter" value="type">
+							<label for="type-radio">По типу</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="reting-radio" type="radio" name="word-sorter" value="rating">
+							<label for="reting-radio">По рейтингу</label>
+						</li>
+					</ul>
 
-						<ul class="triangle-sorter-list">
-							<li><span class="visually-hidden">По возрастанию</span></li>
-							<li><span class="visually-hidden">По убыванию</span></li>
-						</ul>
-					</fieldset>
+					<ul class="triangle-sorter-list">
+						<li>
+							<input class="visually-hidden" id="up-radio" type="radio" name="triangle-sorter" value="up">
+							<label for="up-radio"><span class="visually-hidden">По возрастанию</span></label>
+						</li>
+
+						<li>
+							<input class="visually-hidden" id="down-radio" type="radio" name="triangle-sorter" value="down" checked>
+							<label for="down-radio"><span class="visually-hidden">По убыванию</span></label>
+						</li>
+					</ul>
 				</form>
 			</section>
 

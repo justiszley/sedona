@@ -561,3 +561,230 @@ body {
 	margin-top: -8px;
 	margin-right: 8px;
 }
+
+.filters {
+	background-color: #89c2d2;
+	background-image: url(../img/i/filters-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-top: 27px;
+	padding-bottom: 29px;
+}
+
+.filters form {
+	display: flex;
+}
+
+.filters ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.filters fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.filters legend {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 24px;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.filters .stuff-set {
+	margin-right: 122px;
+}
+
+.stuff-set li:nth-of-type(n+2),
+.residence-type li:nth-of-type(n+2) {
+	margin-top: 23px;
+}
+
+.stuff-set label,
+.residence-type label {
+	display: flex;
+	align-items: center;
+}
+
+.stuff-set label::before,
+.residence-type label::before {
+	content: "";
+	display: inline-block;
+	width: 26px;
+	height: 23px;
+	background-image: url(../img/i/checkbox-off.svg);
+	background-repeat: no-repeat;
+	margin-right: 13px;
+}
+
+.residence-type label::before {
+	margin-right: 17px;
+}
+
+.stuff-set input:checked + label::before,
+.residence-type input:checked + label::before {
+	background-image: url(../img/i/checkbox-on.svg);
+}
+
+.filters input:disabled + label::before {
+	opacity: 0.3;
+}
+
+.filters .residence-type {
+	margin-right: auto;
+}
+
+.cost legend {
+	margin-bottom: 10px;
+}
+
+.cost p {
+	position: relative;
+	min-width: 318px;
+	min-height: 36px;
+	margin: 0;
+	margin-bottom: 20px;
+	padding-top: 6px;
+	border: 2px solid #fff;
+	border-radius: 2px;
+}
+
+.cost p::before {
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	content: "";
+	width: 2px;
+	height: 22px;
+	background-color: #fff;
+}
+
+.cost p span {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+.range {
+	position: relative;
+	width: 306px;
+	height: 2px;
+	margin-left: 10px;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.range::before,
+.range::after {
+	position: absolute;
+	z-index: 1;
+	content: "";
+	display: inline-block;
+	cursor: pointer;
+	width: 20px;
+	height: 22px;
+	background-image: url(../img/i/filter-button.svg);
+	background-size: cover;
+}
+
+.range::before {
+	top: -9px;
+	left: -9px;
+}
+
+.range::after {
+	top: -9px;
+	right: 43px;
+}
+
+.range span {
+	position: absolute;
+	width: 260px;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.filter-btn {
+	display: inline-block;
+	min-width: 137px;
+	min-height: 36px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	text-align: center;
+	margin-left: 85px;
+	margin-top: 33px;
+	padding-top: 6px;
+}
+
+.filter-btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.sorting {
+	display: flex;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: lighter;
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-top: 31px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting-form {
+	display: flex;
+	margin-top: 6px;
+}
+
+.sorting-form h3 {
+	margin: 0;
+	font: inherit;
+	margin-right: 40px;
+}
+
+.sorting-form ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.found-count {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	margin-right: 47px;
+}
+
+.word-sorter-list label {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.word-sorter-list li:nth-of-type(n+2) label {
+	margin-left: 33px;
+}
+
+.word-sorter-list label:hover {
+	color: #81b3d2;
+}
+
+.word-sorter-list label:active {
+	color: #000;
+	border-bottom: 0;
+}
+
+.word-sorter-list input:checked + label {
+	color: #000;
+	border-bottom: 0;
+}
