@@ -499,7 +499,7 @@ body {
 	align-items: center;
 	padding-left: 132px;
 	padding-right: 100px;
-	padding-top: 31px;
+	padding-top: 36px;
 	padding-bottom: 31px;
 	background-color: rgba(255, 255, 255, 0.9);
 }
@@ -593,6 +593,7 @@ body {
 .filters legend {
 	margin: 0;
 	padding: 0;
+	color: white;
 	margin-bottom: 24px;
 	font-size: 16px;
 	line-height: 21px;
@@ -743,6 +744,7 @@ body {
 
 .sorting-form {
 	display: flex;
+	flex-grow: 1;
 	margin-top: 6px;
 }
 
@@ -766,6 +768,10 @@ body {
 	margin-right: 47px;
 }
 
+.sorting-form .word-sorter-list {
+	margin-right: auto;
+}
+
 .word-sorter-list label {
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #81b3d2;
@@ -785,6 +791,158 @@ body {
 }
 
 .word-sorter-list input:checked + label {
-	color: #000;
+	color: #81b3d2;
 	border-bottom: 0;
+}
+
+.triangle-sorter-list .triangle {
+	display: inline-block;
+	border: 10px solid #cacaca;
+	border-right-color: transparent;
+	border-right-width: 6px;
+	border-left-color: transparent;
+	border-left-width: 5px;
+}
+
+.triangle-sorter-list .triangle-up {
+	border-top-width: 0;
+}
+
+.triangle-sorter-list .triangle-down {
+	border-bottom-width: 0;
+}
+
+.triangle-sorter-list li:last-of-type {
+	margin-left: 11px;
+}
+
+.triangle-sorter-list .triangle:hover {
+	border-bottom-color: #000;
+	border-top-color: #000;	
+}
+
+.triangle-sorter-list input:checked + .triangle,
+.triangle-sorter-list .triangle:active {
+	border-bottom-color: #81b3d2;
+	border-top-color: #81b3d2;
+}
+
+.residence-list {
+	list-style-type: none;;
+	margin: 0;
+	padding: 0;
+}
+
+.residence-item article {
+	display: flex;
+	padding-top: 30px;
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.residence-item img {
+	width: 135px;
+	height: 90px;
+	margin-right: 31px;
+}
+
+.residence-information {
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+}
+
+.residence-name {
+	margin: 0;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	margin-top: -5px;
+	margin-bottom: 7px;
+}
+
+.residence-name a:hover,
+.residence-name a:focus {
+	color: #81b3d2;
+}
+
+.residence-name a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.recidence-type-and-price {
+	margin-bottom: 14px;
+}
+
+.residence-information .residence-type {
+	display: inline-block;
+	width: 111px;
+	text-align: left;
+}
+
+.residence-information-btns {
+	display: flex;
+}
+
+.residence-information-btns a {
+	padding: 3px 17px;
+	color: #fff;
+}
+
+.residence-information-btns .more-information-btn {
+	background-color: #81b3d2;
+	margin-right: 5px;
+}
+
+.residence-information-btns .more-information-btn:hover,
+.residence-information-btns .more-information-btn:focus {
+	background-color: #669ec0;
+}
+
+.residence-information-btns .more-information-btn:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.residence-information-btns .booking-btn {
+	background-color: #766357;
+}
+
+.residence-information-btns .booking-btn:hover,
+.residence-information-btns .booking-btn:focus {
+	background-color: #604e43;
+}
+
+.residence-information-btns .booking-btn:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.residence-rating .stars-rating {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 47px;
+}
+
+.stars-rating li {
+	width: 18px;
+	height: 16px;
+	background-image: url(../img/i/star.svg);
+	background-repeat: no-repeat;
+}
+
+.stars-rating li:nth-of-type(n+2) {
+	margin-left: 6px;
+}
+
+.numerical-rating {
+	padding: 3px 14px;
+	margin: 0;
+	margin-right: -2px;
+	background-color: #f2f2f2;
 }
