@@ -272,6 +272,7 @@ body {
 }
 
 .offer {
+	position: relative;
 	text-align: center;
 }
 
@@ -313,6 +314,10 @@ body {
 }
 
 .modal-hotel {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
 	line-height: 26px;
 	font-weight: bold;
 	width: 568px;
@@ -320,11 +325,6 @@ body {
 	padding: 55px;
 	padding-top: 53px;
 	background-color: #f7f7f7;
-}
-
-.modal-hotel form {
-	display: flex;
-	flex-direction: column;
 }
 
 .modal-hotel .form-row {
@@ -470,6 +470,7 @@ body {
 
 .modal-hotel-btn {
 	font: inherit;
+	width: 100%;
 	font-size: 21px;
 	line-height: 26px;
 	color: #fff;
@@ -491,6 +492,11 @@ body {
 
 .map {
 	position: relative;
+}
+
+.map iframe {
+	position: absolute;
+	top: 0;
 }
 
 .main-footer {
